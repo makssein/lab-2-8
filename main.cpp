@@ -96,6 +96,15 @@ int main() {
     }
     std::cout << "Done!" << std::endl;
 
+    std::cout << "=== Test 8: In and out ===" << std::endl;
+    {
+        Mat22d A;
+        std::cin >> A;
+
+        std::cout << A;
+    }
+    std::cout << "Done!" << std::endl;
+
 
     return 0;
 }
