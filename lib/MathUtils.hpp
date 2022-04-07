@@ -60,7 +60,7 @@ namespace my::math{
 
         int getN() const { return m_n; }
         int getM() const { return m_m; }
-        int get(int i, int j) const { return m_mat[i][j]; }
+        T get(int i, int j) const { return m_mat[i][j]; }
         void set(int i, int j, T data) { m_mat[i][j] = data; }
 
         template<typename A, int B, int C>
@@ -131,8 +131,8 @@ namespace my::math{
             return tmp;
         }
 
-        int determinant(){
-            int det = 0;
+        T determinant(){
+            T det = 0;
             if(m_n == 2 && m_m == 2){
                 det = m_mat[0][0] * m_mat [1][1] - m_mat[0][1]*m_mat[1][0];
                 return det;
