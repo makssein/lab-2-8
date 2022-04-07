@@ -153,7 +153,7 @@ namespace my::math{
                 for(int j = 0; j < m_m; j++)
                     tmp.m_mat[i][j] = 0;
             if((m_n == 2 && m_m == 2) || (m_n == 3 && m_m == 3)){
-                int det = determinant();
+                T det = determinant();
                 if(det == 0) {
                     std::cout << "Обратной матрицы не существует, так как определитель равен 0" << std::endl;
                     return tmp;
